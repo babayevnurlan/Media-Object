@@ -6,7 +6,7 @@
 
 .media {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   background-color: rgb(0, 0, 0);
   max-width: 500px;
   padding: 16px;
@@ -31,4 +31,14 @@
   align-items: flex-start;
   margin-left: 0;
   margin-right: 0;
+}
+
+@media screen and (max-width: 576px) {
+  .media {
+    align-items: center;
+  }
+
+  .media-right {
+    align-items: flex-start;
+  }
 }
